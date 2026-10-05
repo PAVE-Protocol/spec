@@ -1,12 +1,40 @@
-# PAVE — Perspective Asset Valuation and Exchange Protocol
+# PAVE
 
-**Programmatic human judgment for agentic systems.**
+PAVE is a protocol that gives AI and agentic systems a way to call on human judgment and authority when needed.
 
-PAVE is a proprietary protocol developed to make human judgment an executable, attributable, and licensable capability that software agents can apply at scale.
+As software becomes more capable of acting on behalf of people and organizations, the question is no longer only what a system can do. It is also where human judgment matters, whose judgment is being represented, what authority accompanies it and how those contributions remain attributable to the people they came from.
 
-It provides an architecture for transforming structured human knowledge into **Lenses**: representations of judgment designed for application to defined classes of decisions. Through authorized integrations, agents can invoke those capabilities within their workflows, extending the reach of human expertise beyond a person's availability for individual consultations or approvals while preserving attribution to the human source.
+PAVE is being developed to make those relationships legible within machine workflows.
 
-Invented by [Angela Benton](https://angelabenton.com). PAVE intellectual property is owned by **[FRUIT Holdings, Inc.](https://byfruit.io)**.
+A system can request represented human judgment within a defined scope. Permission to consult that judgment and permission to act remain separate. Attribution and provenance preserve the relationship between a represented contribution and its human source.
+
+FRUIT calls the broader concept [Callable Human Judgment](https://byfruit.io/what-is-callable-human-judgment/).
+
+PAVE is developed by [FRUIT](https://byfruit.io). Invented by [Angela Benton](https://angelabenton.com). PAVE intellectual property is owned by **FRUIT Holdings, Inc.**.
+
+## Current status
+
+PAVE is under active development.
+
+This repository documents PAVE's public architecture, specification status and intended operation. Descriptions of invocation, execution or integrations do not by themselves indicate that those capabilities are publicly available or production-ready.
+
+PAVE Core and PAVE Agent are private engineering repositories.
+
+The complete current architecture is maintained separately from this public repository. Earlier public schemas document prior work and should not be treated as the complete current architecture. See [Specification Status](./spec/README.md).
+
+This repository is not a production SDK or a self-service runtime. The applications described below express the intended integration model; specific capabilities and availability must be established for each implementation.
+
+Evaluation priorities include fidelity to the represented judgment, preservation of source attribution, traceability of use, behavior at scope boundaries, and the operational effect on agent workflows. Suitability and performance are evaluated within the scope of each implementation and use case.
+
+## About this repository
+
+PAVE is proprietary technology developed by FRUIT.
+
+This repository makes selected technical materials publicly available so PAVE's architecture, boundaries and development can be understood and referenced. It does not contain the complete PAVE implementation.
+
+Public availability of these materials does not make PAVE open source. The [PAVE Public Materials License](./LICENSE) governs use of the materials in this repository. Uses outside those permissions require a separate written agreement with FRUIT.
+
+Earlier schema materials and accompanying notes have been retired from the current branch. This repository does not disclose the complete proprietary methodology for eliciting, extracting, and transforming human judgment into executable representations. Detailed methods and implementation materials are maintained separately.
 
 ## Why agents need human judgment
 
@@ -48,7 +76,7 @@ The objective is to make the basis for applying judgment explicit and evaluable,
 
 Human-in-the-loop review brings direct human attention to a decision. When every recurring decision requires that attention, throughput and response time depend on reviewer capacity and availability.
 
-PAVE is designed to reduce that dependence for decisions within a supported scope. A defined judgment capability can be invoked repeatedly across authorized agent workflows, while people remain responsible for its scope, evaluation, revision, and the decisions requiring direct review.
+PAVE is designed to reduce that dependence for decisions within a supported scope. In the intended model, a defined judgment capability can be invoked repeatedly across authorized agent workflows, while people remain responsible for its scope, evaluation, revision, and the decisions requiring direct review.
 
 This creates a different allocation of human effort:
 
@@ -76,7 +104,9 @@ The following examples illustrate the kinds of integrations PAVE is being develo
 
 In a procurement integration, for example, an agent could assemble supplier options and relevant evidence, invoke an authorized Lens as part of its evaluation, and use the result to inform a recommendation. Under the intended attribution model, the workflow would record which Lens contributed and retain the connection to the human whose judgment it represents. The surrounding application would retain responsibility for purchasing authority, execution controls, and escalation.
 
-## Generative Human Intelligence
+## Technical terminology: Generative Human Intelligence
+
+GHI remains a technical term in PAVE's source representations and engineering materials. It does not replace Callable Human Judgment as the broader concept described above. Earlier public schemas are historical material, not current implementation guidance.
 
 PAVE organizes **Generative Human Intelligence (GHI)** into three related types:
 
@@ -85,20 +115,6 @@ PAVE organizes **Generative Human Intelligence (GHI)** into three related types:
 - **Interpretive knowledge:** the frameworks, principles, and transferable patterns developed through experience.
 
 These provide a foundation for representing human expertise as an asset whose application can be attributed, authorized, evaluated, and licensed.
-
-## Public scope and proprietary methods
-
-This repository provides a public overview of PAVE. Earlier schema materials and accompanying notes have been retired from the current branch; see [Specification Status](./spec/README.md). The repository does not disclose the complete proprietary methodology for eliciting, extracting, and transforming human judgment into executable representations.
-
-The public documentation describes the purpose, conceptual boundaries, and intended applications of PAVE. Detailed methods and implementation materials are maintained separately and are not offered under an open-source license.
-
-## Development status
-
-PAVE is under active development. The current architecture is maintained separately from this public repository. Earlier public schemas document prior work and should not be treated as the complete current architecture.
-
-This repository is not a production SDK or a self-service runtime. The applications described above express the intended integration model; specific capabilities and availability must be established for each implementation.
-
-Evaluation priorities include fidelity to the represented judgment, preservation of source attribution, traceability of use, behavior at scope boundaries, and the operational effect on agent workflows. Suitability and performance are evaluated within the scope of each implementation and use case.
 
 ## Relationship to UDIF
 
@@ -114,16 +130,16 @@ UDIF remains personally owned and independently maintained by Angela Benton. PAV
 
 Ownership of the protocol is separate from rights in an individual's source material and judgment records. An integration must address permission to use that material as well as permission to use PAVE, including applicable attribution requirements and any contributor compensation arrangements.
 
-PAVE is proprietary. Commercial implementation requires a written license agreement. Public access to this repository does not constitute an open-source license; see [LICENSE](./LICENSE) for the applicable terms.
+PAVE is proprietary. The [PAVE Public Materials License](./LICENSE) defines the limited permissions for these materials. Its limits apply to both commercial and non-commercial uses of the materials; uses outside those permissions require a separate written agreement with FRUIT. Public access does not constitute an open-source license.
 
 For commercial licensing, evaluation, and integration inquiries, contact [hello@byfruit.io](mailto:hello@byfruit.io) or visit [FRUIT](https://byfruit.io). Documentation feedback and general technical questions are welcome through [GitHub issues](https://github.com/PAVE-Protocol/spec/issues).
 
 ## Publication provenance
 
 This repository is the public PAVE specification-status and overview destination.
-The status document in spec/README.md is preserved byte-for-byte from the approved
-source surface. Its reference to earlier Git history describes the source repository
-at the time that notice was written, not the history published here.
+The historical notice in spec/README.md is preserved from the approved source
+surface, with an added context note. Its reference to earlier Git history describes
+the source repository at the time that notice was written, not the history published here.
 
 This repository intentionally contains only the approved current surface and sanitized
 specification history. Retired material was excluded from its history. This does not
