@@ -1,13 +1,23 @@
-# PAVE Specification Status
+# PAVE Specification
 
-> **Publication context:** The historical notice below refers to the original source repository. Retired materials were intentionally excluded from this public repository's sanitized history. They have not been restored here. See [Publication provenance](../README.md#publication-provenance) for context.
+PAVE is a protocol for making human judgment accessible to AI and agentic systems.
 
-The earlier public GHI elicitation schema and accompanying notes have been retired from the current branch. They describe historical work and are not current implementation guidance.
+Its architecture establishes how human judgment can be represented, discovered, and accessed by software systems while preserving the boundaries of human authority and attribution.
 
-Their original versions remain available in the repository’s Git history as a record of prior publication. Retirement does not change the terms under which those versions were previously distributed.
+This repository publicly documents PAVE's architecture, concepts, and intended applications. Detailed technical specifications and implementation materials are available through FRUIT.
 
-Current proprietary PAVE specifications, methods, and implementation materials are maintained separately. This directory does not provide the complete current architecture or instructions for implementing PAVE.
+## Explore PAVE
 
-For an overview of PAVE’s purpose and intended applications, see the [project README](../README.md). See [LICENSE](../LICENSE) for the terms applicable to current repository materials.
+- [Architecture](../architecture.md) — How PAVE works, including its components and authority boundaries.
+- [Terminology](../terminology.md) — Core concepts, including GHI records and Lenses.
+- [Examples](../examples.md) — Illustrative uses of PAVE in procurement and creative evaluation.
 
-For integration, evaluation, and licensing inquiries, contact [hello@byfruit.io](mailto:hello@byfruit.io) or visit [FRUIT](https://byfruit.io).
+## Specifications and Implementation
+
+PAVE's detailed technical specifications and implementation materials are not distributed publicly through this repository.
+
+Organizations and developers interested in evaluating, integrating, or implementing PAVE can contact [FRUIT](mailto:hello@byfruit.io) to discuss access and licensing.
+
+Public materials are governed by the [PAVE Public Materials License](../LICENSE).
+
+For information about earlier technical materials and retired schemas, see [Project History](../history.md).
